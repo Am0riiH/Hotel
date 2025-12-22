@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Rooms & Suites</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+    <link rel="icon" type="icon" href="bed-solid-full.svg"/>
+  </head>
+  <body class="rtl" data-page="rooms">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" data-i18n-key="nav_logo">فندق سيرينيتي</a>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link" data-i18n-key="nav_home">الرئيسية</a>
+          <a href="rooms.html" class="nav-link nav-link--active" data-i18n-key="nav_rooms">الغرف والأجنحة</a>
+          <a href="facilities.html" class="nav-link" data-i18n-key="nav_facilities">المرافق</a>
+          <a href="contact.html" class="nav-link" data-i18n-key="nav_contact">التواصل</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="primary-btn primary-btn--small"
+            data-i18n-key="nav_book_now"
+            onclick="window.location.href='contact.html'"
+          >
+            احجز الآن
+          </button>
+          <div class="lang-toggle">
+            <button class="lang-switch is-active" data-lang="ar">عربي</button>
+            <button class="lang-switch" data-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-hero-eyebrow" data-i18n-key="rooms_hero_eyebrow">
+            خيارات إقامة هادئة
+          </p>
+          <h1 data-i18n-key="rooms_hero_title">الغرف والأجنحة</h1>
+          <p data-i18n-key="rooms_hero_subtitle">
+            اختر المساحة التي تناسب طريقتك في السفر، جميع الغرف مصممة بألوان
+            هادئة وتفاصيل عملية.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cards-grid cards-grid--rooms">
+          <article class="card card--room">
+             <div class="card-media">
+              <img src="ROOM2.avif" alt="غرفة قياسية في فندق سيرينيتي" />
+             </div>
+            <div class="card-header">
+              <h2 data-i18n-key="rooms_standard_title">غرفة قياسية</h2>
+              <span class="chip" data-i18n-key="rooms_standard_chip">الأكثر حجزاً لليلة واحدة</span>
+            </div>
+            <p data-i18n-key="rooms_standard_text">
+              مساحة مريحة مع سرير مزدوج أو سريرين منفصلين، مكتب عمل صغير،
+              إضاءة ناعمة، وحمام عملي بتجهيزات أساسية.
+            </p>
+            <ul class="list">
+              <li data-i18n-key="rooms_standard_feature_1">مساحة تقريبية 22 م²</li>
+              <li data-i18n-key="rooms_standard_feature_2">مكتب عمل مدمج</li>
+              <li data-i18n-key="rooms_standard_feature_3">دش مطري وإضاءة هادئة</li>
+            </ul>
+          </article>
+
+          <article class="card card--room">
+            <div class="card-media">
+              <img src="ROOM1.avif" alt="غرفةديلوكس" />
+             </div>
+            <div class="card-header">
+              <h2 data-i18n-key="rooms_deluxe_title">غرفة ديلوكس</h2>
+              <span class="chip" data-i18n-key="rooms_deluxe_chip">أفضل توازن بين السعر والراحة</span>
+            </div>
+            <p data-i18n-key="rooms_deluxe_text">
+              غرفة أوسع مع منطقة جلوس صغيرة وإطلالة هادئة على المدينة، مثالية
+              لإقامة أطول أو رحلات الزوجين.
+            </p>
+            <ul class="list">
+              <li data-i18n-key="rooms_deluxe_feature_1">مساحة تقريبية 28 م²</li>
+              <li data-i18n-key="rooms_deluxe_feature_2">منطقة جلوس مريحة</li>
+              <li data-i18n-key="rooms_deluxe_feature_3">آلة قهوة داخل الغرفة</li>
+            </ul>
+          </article>
+
+          <article class="card card--room">
+            <div class="card-media">
+              <img src="ROOM3.avif" alt="جناح في فندق سيرينيتي" />
+             </div>
+            <div class="card-header">
+              <h2 data-i18n-key="rooms_suite_title">جناح سيرينيتي</h2>
+              <span class="chip" data-i18n-key="rooms_suite_chip">الأكثر راحة للإقامات الطويلة</span>
+            </div>
+            <p data-i18n-key="rooms_suite_text">
+              جناح واسع بغرفة نوم مستقلة ومنطقة معيشة بتصميم هادئ، مناسب
+              للإقامات الطويلة والضيوف الباحثين عن خصوصية أكبر.
+            </p>
+            <ul class="list">
+              <li data-i18n-key="rooms_suite_feature_1">مساحة تقريبية 42 م²</li>
+              <li data-i18n-key="rooms_suite_feature_2">غرفة معيشة منفصلة</li>
+              <li data-i18n-key="rooms_suite_feature_3">ركن قهوة وشاي متكامل</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="container subtle-box">
+          <p data-i18n-key="rooms_note">
+            يمكن تخصيص بعض تفاصيل الغرف حسب احتياجك (نوع الوسائد، ترتيب
+            الأسرة، أو تجهيزات إضافية للعمل). أخبر فريق الحجز بما يناسبك.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n-key="footer_rights">
+          © 2025 فندق سيرينيتي. جميع الحقوق محفوظة.
+        </p>
+       <p class="footer-signature">
+         Developed by Omar Rashied
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

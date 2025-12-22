@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Facilities & Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+    <link rel="icon" type="icon" href="bed-solid-full.svg"/>
+  </head>
+  <body class="rtl" data-page="facilities">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" data-i18n-key="nav_logo">فندق سيرينيتي</a>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link" data-i18n-key="nav_home">الرئيسية</a>
+          <a href="rooms.html" class="nav-link" data-i18n-key="nav_rooms">الغرف والأجنحة</a>
+          <a href="facilities.html" class="nav-link nav-link--active" data-i18n-key="nav_facilities">المرافق</a>
+          <a href="contact.html" class="nav-link" data-i18n-key="nav_contact">التواصل</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="primary-btn primary-btn--small"
+            data-i18n-key="nav_book_now"
+            onclick="window.location.href='contact.html'"
+          >
+            احجز الآن
+          </button>
+          <div class="lang-toggle">
+            <button class="lang-switch is-active" data-lang="ar">عربي</button>
+            <button class="lang-switch" data-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p
+            class="page-hero-eyebrow"
+            data-i18n-key="facilities_hero_eyebrow"
+          >
+            تفاصيل صغيرة تصنع فرقاً
+          </p>
+          <h1 data-i18n-key="facilities_hero_title">المرافق والخدمات</h1>
+          <p data-i18n-key="facilities_hero_subtitle">
+            مساحات هادئة للعمل والراحة، مع خدمات بسيطة لكنها مدروسة بعناية.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cards-grid cards-grid--facilities">
+          <article class="card">
+             <div class="card-media">
+             <img src="REC.avif" alt="ردهة فندق سيرينيتي" />
+             </div>
+            <h2 data-i18n-key="facilities_item_1_title">ردهة هادئة</h2>
+            <p data-i18n-key="facilities_item_1_text">
+              ردهة بتصميم بسيط ومقاعد مريحة للعمل أو القراءة، مع إضاءة ناعمة
+              وموسيقى هادئة في الخلفية.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+             <img src="breakfast.avif" alt="منطقة إفطار مشرقة" />
+            </div>
+            <h2 data-i18n-key="facilities_item_2_title">منطقة إفطار مشرقة</h2>
+            <p data-i18n-key="facilities_item_2_text">
+              مساحة مضيئة بإطلالة على المدينة لتناول إفطار هادئ مع خيارات
+              بسيطة وصحية.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+             <img src="GYM2.avif" alt="منطقة لياقةة" />
+           </div>
+            <h2 data-i18n-key="facilities_item_3_title">غرفة لياقة</h2>
+            <p data-i18n-key="facilities_item_3_text">
+              أجهزة أساسية تم اختيارها بعناية لتمنحك تمريناً خفيفاً قبل
+              يومك أو بعده.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+             <img src="meet.avif" alt="منطقة اجتماعات" />
+             </div>
+            <h2 data-i18n-key="facilities_item_4_title">غرفة اجتماعات صغيرة</h2>
+            <p data-i18n-key="facilities_item_4_text">
+              غرفة اجتماعات بديكور بسيط تسع حتى 8 أشخاص، مجهزة بشاشة عرض
+              واتصال سريع بالإنترنت.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n-key="footer_rights">
+          © 2025 فندق سيرينيتي. جميع الحقوق محفوظة.
+        </p>
+         <p class="footer-signature">
+           Developed by Omar Rashied
+         </p>
+      </div>
+    </footer>
+  </body>
+</html>

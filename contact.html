@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Contact & Reservations</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+    <link rel="icon" type="icon" href="bed-solid-full.svg"/>
+  </head>
+  <body class="rtl" data-page="contact">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" data-i18n-key="nav_logo">فندق سيرينيتي</a>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link" data-i18n-key="nav_home">الرئيسية</a>
+          <a href="rooms.html" class="nav-link" data-i18n-key="nav_rooms">الغرف والأجنحة</a>
+          <a href="facilities.html" class="nav-link" data-i18n-key="nav_facilities">المرافق</a>
+          <a href="contact.html" class="nav-link nav-link--active" data-i18n-key="nav_contact">التواصل</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="primary-btn primary-btn--small"
+            data-i18n-key="nav_book_now"
+          >
+            احجز الآن
+          </button>
+          <div class="lang-toggle">
+            <button class="lang-switch is-active" data-lang="ar">عربي</button>
+            <button class="lang-switch" data-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p
+            class="page-hero-eyebrow"
+            data-i18n-key="contact_hero_eyebrow"
+          >
+            خطوة بسيطة لتأكيد إقامتك
+          </p>
+          <h1 data-i18n-key="contact_hero_title">التواصل والحجز</h1>
+          <p data-i18n-key="contact_hero_subtitle">
+            أخبرنا عن تفاصيل رحلتك وسيتواصل معك فريق الحجز لتأكيد التوفر
+            وإتمام الإجراءات.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-2 grid-2--contact">
+          <form class="contact-form" id="booking-form">
+            <div class="field">
+              <label for="name" data-i18n-key="contact_form_name_label"
+                >الاسم الكامل</label
+              >
+              <input id="name" name="name" type="text" />
+            </div>
+
+            <div class="field">
+              <label for="email" data-i18n-key="contact_form_email_label"
+                >البريد الإلكتروني</label
+              >
+              <input id="email" name="email" type="email" />
+            </div>
+
+            <div class="field field--inline">
+              <div>
+                <label
+                  for="checkin"
+                  data-i18n-key="contact_form_checkin_label"
+                  >تاريخ الوصول</label
+                >
+                <input id="checkin" name="checkin" type="date" />
+              </div>
+              <div>
+                <label
+                  for="checkout"
+                  data-i18n-key="contact_form_checkout_label"
+                  >تاريخ المغادرة</label
+                >
+                <input id="checkout" name="checkout" type="date" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="guests" data-i18n-key="contact_form_guests_label"
+                >عدد الضيوف</label
+              >
+              <input
+                id="guests"
+                name="guests"
+                type="number"
+                min="1"
+                max="6"
+                value="1"
+              />
+            </div>
+
+            <div class="field">
+              <label
+                for="message"
+                data-i18n-key="contact_form_message_label"
+                >ملاحظات إضافية</label
+              >
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="primary-btn primary-btn--full"
+              data-i18n-key="contact_form_submit"
+            >
+              إرسال طلب الحجز
+            </button>
+
+            <p
+              class="form-success"
+              id="form-success"
+              data-i18n-key="contact_form_success"
+            >
+              تم استلام طلبك، سيتواصل معك فريق الحجز قريباً.
+            </p>
+          </form>
+
+          <div class="contact-info subtle-box">
+            <h2 data-i18n-key="contact_info_title">بيانات التواصل المباشر</h2>
+            <p data-i18n-key="contact_info_text">
+              يمكنك التواصل معنا مباشرة عبر الهاتف أو البريد الإلكتروني. فريق
+              الاستقبال متواجد لخدمتك على مدار الساعة.
+            </p>
+            <ul class="list list--plain">
+              <li>
+                <strong data-i18n-key="contact_info_phone_label">الهاتف:</strong>
+                <span>+218 92 397 2773</span>
+              </li>
+              <li>
+                <strong data-i18n-key="contact_info_email_label">البريد:</strong>
+                <span>Omar.bin7ussien@gmail.com</span>
+              </li>
+              <li>
+                <strong data-i18n-key="contact_info_location_label"
+                  >الموقع:</strong
+                >
+                <span>شارع الجمهورية  – بالقرب من مصرف التجاري</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n-key="footer_rights">
+         © 2025 فندق سيرينيتي. جميع الحقوق محفوظة.
+        </p>
+        <p class="footer-signature">
+         Developed by Omar Rashied
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>فندق سيرينيتي | Serenity Hotel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="main.js"></script>
+    <link rel="icon" type="icon" href="bed-solid-full.svg"/>
+
+  </head>
+  <body class="rtl" data-page="home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" data-i18n-key="nav_logo">فندق سيرينيتي</a>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link nav-link--active" data-i18n-key="nav_home">الرئيسية</a>
+          <a href="rooms.html" class="nav-link" data-i18n-key="nav_rooms">الغرف والأجنحة</a>
+          <a href="facilities.html" class="nav-link" data-i18n-key="nav_facilities">المرافق</a>
+          <a href="contact.html" class="nav-link" data-i18n-key="nav_contact">التواصل</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="primary-btn primary-btn--small"
+            data-i18n-key="nav_book_now"
+            onclick="window.location.href='contact.html'"
+          >
+            احجز الآن
+          </button>
+          <div class="lang-toggle">
+            <button class="lang-switch is-active" data-lang="ar">عربي</button>
+            <button class="lang-switch" data-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="hero-eyebrow" data-i18n-key="home_hero_eyebrow"> فندق سيرينيتي  </p>
+            <h1 class="hero-title" data-i18n-key="home_hero_title">
+              حيث يلتقي الهدوء براحة عصرية.
+            </h1>
+            <p class="hero-subtitle" data-i18n-key="home_hero_subtitle">
+              فندق سيرينيتي في قلب المدينة بتصميم هادئ وألوان ناعمة وتفاصيل
+              مدروسة بعناية لتجربة إقامة مختلفة.
+            </p>
+            <div class="hero-actions">
+              <a
+                href="rooms.html"
+                class="primary-btn"
+                data-i18n-key="home_hero_cta_primary"
+                >عرض الغرف</a
+              >
+              <a
+                href="#about"
+                class="ghost-btn"
+                data-i18n-key="home_hero_cta_secondary"
+                >اكتشف الفندق</a
+              >
+            </div>
+          </div>
+          <div class="hero-card">
+            <p class="hero-card-title" data-i18n-key="home_card_title">
+              إقامتك القادمة تبدأ من هنا
+            </p>
+            <ul class="hero-card-list">
+              <li data-i18n-key="home_card_item_1">
+                تسجيل دخول مرن على مدار الساعة
+              </li>
+              <li data-i18n-key="home_card_item_2">
+                إفطار هادئ بإطلالة بانورامية
+              </li>
+              <li data-i18n-key="home_card_item_3">
+                إنترنت فائق السرعة في جميع المساحات
+              </li>
+            </ul>
+            <a href="contact.html" class="text-link" data-i18n-key="home_card_cta"
+              >تواصل مع فريق الحجز</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2 data-i18n-key="home_about_title">مهرب هادئ داخل المدينة</h2>
+            <p data-i18n-key="home_about_text">
+              يجمع فندق سيرينيتي بين التصميم البسيط والمواد الطبيعية الدافئة
+              ليخلق أجواء مريحة تناسب المسافرين للعمل أو الترفيه، مع اهتمام خاص
+              بالتفاصيل الصغيرة.
+            </p>
+          </div>
+          <div class="pill-grid">
+            <div class="pill">
+              <h3 data-i18n-key="home_highlight_1_title">
+                تصميم هادئ وعصري
+              </h3>
+              <p data-i18n-key="home_highlight_1_text">
+                ألوان محايدة، أثاث مريح، وإضاءة ناعمة في كل غرفة ومساحة.
+              </p>
+            </div>
+            <div class="pill">
+              <h3 data-i18n-key="home_highlight_2_title">موقع استراتيجي</h3>
+              <p data-i18n-key="home_highlight_2_text">
+                على بعد دقائق من المراكز التجارية، المقاهي الهادئة، والمعالم
+                الثقافية.
+              </p>
+            </div>
+            <div class="pill">
+              <h3 data-i18n-key="home_highlight_3_title">خدمة تهتم بك</h3>
+              <p data-i18n-key="home_highlight_3_text">
+                فريق استقبال متواجد دائماً لتلبية احتياجاتك بهدوء واحترافية.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted">
+        <div class="container section-heading">
+          <h2 data-i18n-key="home_preview_rooms_title">
+            الغرف المفضلة لدى ضيوفنا
+          </h2>
+          <p data-i18n-key="home_preview_rooms_text">
+            مجموعة مختارة من الغرف المصممة بعناية لتناسب أسلوب إقامتك.
+          </p>
+        </div>
+        <div class="container cards-grid">
+          <article class="card">
+            <h3 data-i18n-key="rooms_standard_title">غرفة قياسية</h3>
+            <p data-i18n-key="rooms_standard_text">
+              مساحة مريحة بتفاصيل بسيطة وألوان هادئة مناسبة لليلة قصيرة أو
+              إقامة عمل.
+            </p>
+            <span class="chip" data-i18n-key="rooms_standard_hint">
+              مثالية لرحلات العمل القصيرة
+            </span>
+          </article>
+          <article class="card">
+            <h3 data-i18n-key="rooms_deluxe_title">غرفة ديلوكس</h3>
+            <p data-i18n-key="rooms_deluxe_text">
+              مساحة أوسع مع منطقة جلوس مريحة وإطلالة هادئة على المدينة.
+            </p>
+            <span class="chip" data-i18n-key="rooms_deluxe_hint">
+              مناسبة لليلتين أو أكثر
+            </span>
+          </article>
+          <article class="card">
+            <h3 data-i18n-key="rooms_suite_title">جناح سيرينيتي</h3>
+            <p data-i18n-key="rooms_suite_text">
+              جناح واسع بغرفة معيشة منفصلة وتصميم عصري بسيط يناسب الإقامات
+              الطويلة.
+            </p>
+            <span class="chip" data-i18n-key="rooms_suite_hint">
+              تجربة إقامة متكاملة بهدوء تام
+            </span>
+          </article>
+        </div>
+        <div class="container center-text">
+          <a
+            href="rooms.html"
+            class="text-link"
+            data-i18n-key="home_preview_rooms_cta"
+            >استعرض جميع الغرف والأجنحة</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n-key="footer_rights">
+          © 2025 فندق سيرينيتي. جميع الحقوق محفوظة.
+        </p>
+        <p class="footer-signature">
+         Developed by Omar Rashied
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
