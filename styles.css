@@ -621,6 +621,11 @@ body:not(.rtl) {
     justify-content: space_between;
   }
 
+    .header-actions {
+    display: flex;
+    margin-inline-start: auto; 
+  }
+
   .main-nav {
     justify-content: flex-start;
     overflow-x: auto;
@@ -633,8 +638,9 @@ body:not(.rtl) {
 }
 
 @media (max-width: 480px) {
-  .header-actions {
-    display: none;
+   .header-actions {
+    display: flex;
+    margin-inline-start: auto; 
   }
 
   .hero {
@@ -643,3 +649,4 @@ body:not(.rtl) {
 }
 
 /* Omar Rashied*/
+
